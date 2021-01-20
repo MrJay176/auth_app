@@ -1,0 +1,29 @@
+import 'package:auth_app/widgets/authStack.dart';
+import 'package:flutter/material.dart';
+
+class Login extends StatefulWidget{
+
+  @override
+  State<StatefulWidget> createState() {
+    return LoginState();
+  }
+}
+
+class LoginState extends State<Login>{
+
+  @override
+  Widget build(BuildContext context) {
+
+    return MaterialApp(
+      debugShowCheckedModeBanner:false,
+      home: Scaffold(
+        body: authStack(
+            isLogin:true,
+        )
+
+      ),
+    );
+  }
+
+
+}
